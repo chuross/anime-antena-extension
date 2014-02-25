@@ -1,0 +1,51 @@
+#anime-antena-body {
+	margin: 0;
+	width: 800px;
+}
+
+#anime-antena-body h1 {
+	font-size: 12px;
+	padding: 3px 10px;
+	color: #999999;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #212121),
+		color-stop(1, #000000)
+	);
+	background: rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.40);
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.40);
+}
+
+#anime-antena-body h1 .range {
+	color: #cccccc;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+#anime-antena-body h1 .powerdby {
+	margin-left: 30px;
+}
+
+#anime-antena-body .message {
+	margin: 50px;
+	text-align: center;
+}
+
+#anime-antena-body table {
+	width: 800px;
+}
+
+#anime-antena-body th, td {
+	table-layout: fixed;
+}
+
+.anime-antena-warning-row {
+	background: #F3E2A9;
+}
+
+.anime-antena-column-air-time {
+	white-space: nowrap;
+}

@@ -1,0 +1,17 @@
+{
+	"name": "アニメあんてな",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "アニメの放送時間変更を通知してくれるよ",
+	"browser_action": {
+		"default_title": "アニメあんてな",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"page": "background.html"
+	},
+	"permissions": [
+		"tabs",
+		"http://cal.syoboi.jp/"
+	]
+}
