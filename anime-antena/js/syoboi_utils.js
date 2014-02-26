@@ -16,6 +16,7 @@ SyoboiUtils.filterWarningItemList = function(result) {
 }
 
 var isWarningItem = function(item) {
-	var binaryNumber = item.Flag.toString(2);
+	var flag = parseInt(item.Flag);
+	var binaryNumber = flag.toString(2);
 	return binaryNumber.substring(binaryNumber.length - 1) === '1';
 }
