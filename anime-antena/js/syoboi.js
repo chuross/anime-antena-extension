@@ -5,6 +5,7 @@ var Syoboi = (function() {
 	constructor.prototype.getItemList = function(params, successCallback, failedCallback) {
 		var url = "http://cal.syoboi.jp/rss2.php";
 		var query = createQueryString(params);
+		console.log('target:' + url + '?' + query);
 		$.ajax({
 			type: 'GET',
 			url: url,

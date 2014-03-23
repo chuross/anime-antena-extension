@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <title>アニメあんてな</title>
 <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/syoboi_utils.js"></script>
 <script type="text/javascript" src="js/syoboi.js"></script>
 <script type="text/javascript" src="js/popup.js"></script>
@@ -13,15 +14,36 @@
 <body id="anime-antena-body">
 <!-- container -->
 <div id="anime-antena-container">
-	<h1>放送時間の違う可能性のある番組<span class="range">対象期間:　</span><a class="powerdby" href="http://cal.syoboi.jp/">しょぼいカレンダー</a></h1>
-	<p class="message">読み込み中です...</p>
-	<table class="table table-hover">
-		<thead>
-			<tr><th class="anime-antena-column-name">放送日</th><th>タイトル</th><th>コメント</th><th>チャンネル</th></tr>
-		</thead>
-		<tbody class="anime-antena-table-contents">
-		</tbody>
-	</table>
+	<div class="tabbable">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#air-time-changed-programs" data-toggle="tab">放送時間変更 <span class="badge badge-info air-time-change-badge">0</span></a></li>
+			<li><a href="#new-programs" data-toggle="tab">新番組 <span class="badge badge-info new-program-badge">0</span></a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="air-time-changed-programs" class="tab-pane active">
+				<p class="range well">対象期間: </p>
+				<p class="message">読み込み中です...</p>
+				<table class="table table-hover">
+					<thead>
+						<tr><th class="anime-antena-column-name">放送日</th><th>タイトル</th><th>コメント</th><th>チャンネル</th></tr>
+					</thead>
+					<tbody class="anime-antena-table-contents">
+					</tbody>
+				</table>
+			</div>
+			<div id="new-programs" class="tab-pane">
+				<p class="range well">対象期間: </p>
+				<p class="message">読み込み中です...</p>
+				<table class="table table-hover">
+					<thead>
+						<tr><th class="anime-antena-column-name">放送日</th><th>タイトル</th><th>コメント</th><th>チャンネル</th></tr>
+					</thead>
+					<tbody class="anime-antena-table-contents">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>

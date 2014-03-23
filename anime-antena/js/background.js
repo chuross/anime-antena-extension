@@ -24,9 +24,10 @@ var format = function(target) {
 
 var onSuccess = function(result) {
 	var warningItemList = SyoboiUtils.filterWarningItemList(result);
+	var newProgramItemList = SyoboiUtils.filterNewProgramItemList(result);
 	
-	if(warningItemList.length === 0) {
+	if(warningItemList.length === 0 && newProgramItemList.length === 0) {
 		return;
 	}
-	chrome.browserAction.setBadgeText({"text": String(warningItemList.length)});
+	chrome.browserAction.setBadgeText({"text": String(warningItemList.length + newProgramItemList.length)});
 }
